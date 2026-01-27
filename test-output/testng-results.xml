@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-27T13:28:25 IST" name="SauceDemoSuite" finished-at="2026-01-27T13:28:31 IST" duration-ms="6500">
+    <groups>
+    </groups>
+    <test started-at="2026-01-27T13:28:25 IST" name="RegressionTests" finished-at="2026-01-27T13:28:31 IST" duration-ms="6500">
+      <class name="testCases.TC001_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC001_LoginTest@4fce136b]" started-at="2026-01-27T13:28:25 IST" name="setup" finished-at="2026-01-27T13:28:28 IST" duration-ms="2968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@4fce136b]" started-at="2026-01-27T13:28:28 IST" name="verifyLogin" finished-at="2026-01-27T13:28:28 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_LoginTest@4fce136b]" started-at="2026-01-27T13:28:28 IST" name="tearDown" finished-at="2026-01-27T13:28:28 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_LoginTest -->
+      <class name="testCases.TC00_ProductAddToCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC00_ProductAddToCart@61e94def]" started-at="2026-01-27T13:28:28 IST" name="setup" finished-at="2026-01-27T13:28:30 IST" duration-ms="1803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@61e94def]" started-at="2026-01-27T13:28:30 IST" name="ProductAddToCart" finished-at="2026-01-27T13:28:31 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC00_ProductAddToCart@61e94def]" started-at="2026-01-27T13:28:31 IST" name="tearDown" finished-at="2026-01-27T13:28:31 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC00_ProductAddToCart -->
+    </test> <!-- RegressionTests -->
+  </suite> <!-- SauceDemoSuite -->
+</testng-results>
