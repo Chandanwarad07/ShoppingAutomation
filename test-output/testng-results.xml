@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-02T13:43:23 IST" name="SauceDemoSuite" finished-at="2026-02-02T13:43:33 IST" duration-ms="10183">
+  <suite started-at="2026-02-02T21:30:59 IST" name="SauceDemoSuite" finished-at="2026-02-02T21:31:08 IST" duration-ms="8652">
     <groups>
     </groups>
-    <test started-at="2026-02-02T13:43:23 IST" name="RegressionTests" finished-at="2026-02-02T13:43:33 IST" duration-ms="10183">
+    <test started-at="2026-02-02T21:30:59 IST" name="RegressionTests" finished-at="2026-02-02T21:31:08 IST" duration-ms="8652">
       <class name="testCases.TC001_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-02T13:43:23 IST" name="setup" finished-at="2026-02-02T13:43:26 IST" duration-ms="3223" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_LoginTest@2f94c4db]" started-at="2026-02-02T21:31:00 IST" name="setup" finished-at="2026-02-02T21:31:02 IST" duration-ms="2776" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-02T13:43:26 IST" name="verifyLogin" finished-at="2026-02-02T13:43:27 IST" duration-ms="497" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@2f94c4db]" started-at="2026-02-02T21:31:02 IST" name="verifyLogin" finished-at="2026-02-02T21:31:03 IST" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-02T13:43:27 IST" name="closeup" finished-at="2026-02-02T13:43:27 IST" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
       </class> <!-- testCases.TC001_LoginTest -->
       <class name="testCases.TC002_AddToCartTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-02T13:43:27 IST" name="setup" finished-at="2026-02-02T13:43:29 IST" duration-ms="1990" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_AddToCartTest@5d25e6bb]" started-at="2026-02-02T21:31:03 IST" name="setup" finished-at="2026-02-02T21:31:05 IST" duration-ms="1834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,17 +35,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-02T13:43:29 IST" name="verifyAddToCart" finished-at="2026-02-02T13:43:30 IST" duration-ms="714" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:0, instance:testCases.TC002_AddToCartTest@5d25e6bb]" started-at="2026-02-02T21:31:05 IST" name="verifyAddToCart" finished-at="2026-02-02T21:31:05 IST" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-02T13:43:30 IST" name="closeup" finished-at="2026-02-02T13:43:30 IST" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
       </class> <!-- testCases.TC002_AddToCartTest -->
       <class name="testCases.TC00_ProductAddToCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-02T13:43:30 IST" name="setup" finished-at="2026-02-02T13:43:32 IST" duration-ms="1904" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC00_ProductAddToCart@ce5a68e]" started-at="2026-02-02T21:31:05 IST" name="setup" finished-at="2026-02-02T21:31:07 IST" duration-ms="1934" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,13 +52,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-02T13:43:32 IST" name="ProductAddToCart" finished-at="2026-02-02T13:43:33 IST" duration-ms="621" status="FAIL">
+        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@ce5a68e]" started-at="2026-02-02T21:31:07 IST" name="ProductAddToCart" finished-at="2026-02-02T21:31:08 IST" duration-ms="675" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cart count mismatch! expected [5] but found [2]]]>
+              <![CDATA[Cart count mismatch! expected [5] but found [1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Cart count mismatch! expected [5] but found [2]
+              <![CDATA[java.lang.AssertionError: Cart count mismatch! expected [5] but found [1]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -105,10 +97,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductAddToCart -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-02T13:43:33 IST" name="closeup" finished-at="2026-02-02T13:43:33 IST" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
       </class> <!-- testCases.TC00_ProductAddToCart -->
     </test> <!-- RegressionTests -->
   </suite> <!-- SauceDemoSuite -->

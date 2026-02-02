@@ -66,9 +66,9 @@ public class BaseClass {
         return targetPath;
     }
 
-    @AfterClass
-    public void closeup() {
-    	driver.quit();
-    }
+//    @AfterClass
+//    public void closeup() {
+//    	driver.quit();
+//    }
 }
 
