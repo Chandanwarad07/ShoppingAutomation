@@ -19,15 +19,15 @@ public class TC00_ProductAddToCart extends BaseClass {
 
         // ✅ Create object AFTER login
         ProductAddToCart pa = new ProductAddToCart(driver);
-        pa.clickCart();
+        pa.clickAddBackpack();
         pa.clicklight();
         
         System.out.println("Cart Count: " + pa.getCartCount());
 
-        
-        Assert.assertEquals(pa.getCartCount(), "2");
-        
-        
+        String count = pa.getCartCount();
+        System.out.println("Cart Count: " + count);
+        Assert.assertEquals(count, "5", "Cart count mismatch!");
+
         pa.clickcartIcon();
         pa.ContionShopping();
     }

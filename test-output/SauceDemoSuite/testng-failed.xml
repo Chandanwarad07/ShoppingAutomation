@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SauceDemoSuite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [SauceDemoSuite]">
   <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="LoginTest(failed)">
-    <classes>
-      <class name="testCases.TC001_LoginTest">
-        <methods>
-          <include name="verifyLogin"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC001_LoginTest -->
-    </classes>
-  </test> <!-- LoginTest(failed) -->
-  <test thread-count="5" name="AddToCartTest(failed)">
+  <listeners>
+    <listener class-name="utilities.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="RegressionTests(failed)">
     <classes>
       <class name="testCases.TC00_ProductAddToCart">
         <methods>
-          <include name="tearDown"/>
           <include name="ProductAddToCart"/>
+          <include name="closeup"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC00_ProductAddToCart -->
     </classes>
-  </test> <!-- AddToCartTest(failed) -->
+  </test> <!-- RegressionTests(failed) -->
 </suite> <!-- Failed suite [SauceDemoSuite] -->

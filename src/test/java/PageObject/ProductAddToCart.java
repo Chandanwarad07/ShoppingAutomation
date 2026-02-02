@@ -26,9 +26,10 @@ public class ProductAddToCart extends BasePage {
 	@FindBy(xpath="//span[@class='shopping_cart_badge']")
 	WebElement cartBadge;
 	
-	public void clickCart() {
-		btnAddBackpack.click();
+	public void clickAddBackpack() {
+	    btnAddBackpack.click();
 	}
+
 	
 	public void clicklight() {
 		addToCart.click();
@@ -46,6 +47,9 @@ public class ProductAddToCart extends BasePage {
 	    return cartBadge.getText();
 	}
 	
+	
+	
+
 	
 }
 

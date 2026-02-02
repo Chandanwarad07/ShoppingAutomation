@@ -19,7 +19,7 @@ public class TC002_AddToCartTest extends BaseClass {
         lp.clickButton();
 
         InventoryPage ip = new InventoryPage(driver);
-        Thread.sleep(1000);
+        
         ip.clickAddToCart();
         ip.clickCart();
 
