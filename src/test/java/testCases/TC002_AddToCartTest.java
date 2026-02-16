@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC002_AddToCartTest extends BaseClass {
 
-    @Test
+	@Test(groups = {"regression"})
     public void verifyAddToCart() throws InterruptedException {
 
         LoginPage lp = new LoginPage(driver);

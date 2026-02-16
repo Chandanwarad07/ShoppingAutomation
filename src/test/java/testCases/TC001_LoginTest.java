@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC001_LoginTest extends BaseClass {
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void verifyLogin()
 	{
 		LoginPage lp = new LoginPage(driver);

@@ -9,7 +9,7 @@ import testBase.BaseClass;
 
 public class TC00_ProductAddToCart extends BaseClass {
 
-	@Test
+	@Test(groups = {"smoke", "regression"})
 	public void ProductAddToCart() {
 
 	    LoginPage lp = new LoginPage(driver);

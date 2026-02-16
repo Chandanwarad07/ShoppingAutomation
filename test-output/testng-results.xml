@@ -1,78 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-16T16:47:44 IST" name="SauceDemoSuite" finished-at="2026-02-16T16:47:56 IST" duration-ms="11866">
+  <suite started-at="2026-02-16T17:09:44 IST" name="Shopping Suite" finished-at="2026-02-16T17:09:44 IST" duration-ms="178">
     <groups>
+      <group name="regression">
+        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-16T16:47:44 IST" name="RegressionTests" finished-at="2026-02-16T16:47:56 IST" duration-ms="11866">
-      <class name="testCases.TC001_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-16T16:47:44 IST" name="setup" finished-at="2026-02-16T16:47:49 IST" duration-ms="4920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-16T16:47:49 IST" name="verifyLogin" finished-at="2026-02-16T16:47:49 IST" duration-ms="568" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC001_LoginTest@664a9613]" started-at="2026-02-16T16:47:49 IST" name="closeup" finished-at="2026-02-16T16:47:50 IST" duration-ms="331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
-      </class> <!-- testCases.TC001_LoginTest -->
-      <class name="testCases.TC002_AddToCartTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-16T16:47:50 IST" name="setup" finished-at="2026-02-16T16:47:52 IST" duration-ms="2048" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-16T16:47:52 IST" name="verifyAddToCart" finished-at="2026-02-16T16:47:52 IST" duration-ms="723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC002_AddToCartTest@71104a4]" started-at="2026-02-16T16:47:52 IST" name="closeup" finished-at="2026-02-16T16:47:53 IST" duration-ms="312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
-      </class> <!-- testCases.TC002_AddToCartTest -->
+    <test started-at="2026-02-16T17:09:44 IST" name="Smoke Tests" finished-at="2026-02-16T17:09:44 IST" duration-ms="178">
       <class name="testCases.TC00_ProductAddToCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-16T16:47:53 IST" name="setup" finished-at="2026-02-16T16:47:55 IST" duration-ms="1794" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-16T16:47:55 IST" name="ProductAddToCart" finished-at="2026-02-16T16:47:55 IST" duration-ms="601" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" started-at="2026-02-16T17:09:44 IST" name="ProductAddToCart" finished-at="2026-02-16T17:09:44 IST" duration-ms="76" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cart count mismatch! expected [5] but found [2]]]>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "this.p" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Cart count mismatch! expected [5] but found [2]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:29)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.p" is null
+at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:16)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -101,15 +49,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductAddToCart -->
-        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC00_ProductAddToCart@4985cbcb]" started-at="2026-02-16T16:47:55 IST" name="closeup" finished-at="2026-02-16T16:47:56 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeup -->
       </class> <!-- testCases.TC00_ProductAddToCart -->
-    </test> <!-- RegressionTests -->
-  </suite> <!-- SauceDemoSuite -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Shopping Suite -->
 </testng-results>
