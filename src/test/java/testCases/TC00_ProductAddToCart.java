@@ -9,27 +9,36 @@ import testBase.BaseClass;
 
 public class TC00_ProductAddToCart extends BaseClass {
 
-    @Test
-    public void ProductAddToCart() {
+	@Test
+	public void ProductAddToCart() {
 
-        LoginPage lp = new LoginPage(driver);
-        lp.enterUserName(p.getProperty("username"));
-        lp.enterPassword(p.getProperty("password"));
-        lp.clickButton();
+	    LoginPage lp = new LoginPage(driver);
+	    lp.enterUserName(p.getProperty("username"));
+	    lp.enterPassword(p.getProperty("password"));
+	    lp.clickButton();
 
-        // ✅ Create object AFTER login
-        ProductAddToCart pa = new ProductAddToCart(driver);
-        pa.clickAddBackpack();
-        pa.clicklight();
-        
-        System.out.println("Cart Count: " + pa.getCartCount());
+	    ProductAddToCart pa = new ProductAddToCart(driver);
 
-        String count = pa.getCartCount();
-        System.out.println("Cart Count: " + count);
-        Assert.assertEquals(count, "5", "Cart count mismatch!");
+	    int expectedCount = 0;
 
-        pa.clickcartIcon();
-        pa.ContionShopping();
-    }
+	    pa.clickAddBackpack();
+	    expectedCount++;
+
+	    pa.clicklight();
+	    expectedCount++;
+
+	    String actualCount = pa.getCartCount();
+	    System.out.println("Cart Count: " + actualCount);
+
+	    Assert.assertEquals(
+	        actualCount,
+	        String.valueOf(expectedCount),
+	        "Cart count mismatch!"
+	    );
+
+	    pa.clickcartIcon();
+	    pa.ContionShopping();
+	}
+
 }
 

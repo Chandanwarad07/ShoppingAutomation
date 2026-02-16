@@ -1,9 +1,13 @@
+PageObject\newtestcode.class
+utilities\TestListener.class
 PageObject\BasePage.class
 PageObject\InventoryPage.class
+utilities\ExtentManager.class
 PageObject\ProductAddToCart.class
 PageObject\CartPage.class
 testBase\BaseClass.class
 PageObject\LoginPage.class
 testCases\TC001_LoginTest.class
+PageObject\TestnewCode.class
 testCases\TC00_ProductAddToCart.class
 testCases\TC002_AddToCartTest.class

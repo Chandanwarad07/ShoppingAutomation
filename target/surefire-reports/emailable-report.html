@@ -9,37 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SauceDemoSuite</th></tr>
-<tr><td><a href="#t0">RegressionTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,376</td><td></td><td></td></tr>
+<tr><td><a href="#t0">RegressionTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,551</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceDemoSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC00_ProductAddToCart</td><td><a href="#m0">ProductAddToCart</a></td><td rowspan="1">1770049018509</td><td rowspan="1">11548</td></tr><tr><th colspan="4">RegressionTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC001_LoginTest</td><td><a href="#m1">verifyLogin</a></td><td rowspan="1">1770049010258</td><td rowspan="1">648</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC002_AddToCartTest</td><td><a href="#m2">verifyAddToCart</a></td><td rowspan="1">1770049014828</td><td rowspan="1">914</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceDemoSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC00_ProductAddToCart</td><td><a href="#m0">ProductAddToCart</a></td><td rowspan="1">1771241193143</td><td rowspan="1">746</td></tr><tr><th colspan="4">RegressionTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC001_LoginTest</td><td><a href="#m1">verifyLogin</a></td><td rowspan="1">1771241186278</td><td rowspan="1">477</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC002_AddToCartTest</td><td><a href="#m2">verifyAddToCart</a></td><td rowspan="1">1771241189219</td><td rowspan="1">887</td></tr></tbody>
 </table>
-<h2>RegressionTests</h2><h3 id="m0">testCases.TC00_ProductAddToCart#ProductAddToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;shopping_cart_badge&apos;]&quot;}
-  (Session info: chrome=144.0.7559.110)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [83cf29d049fa2772e45e31cb634df7fc, findElement {using=xpath, value=//span[@class=&apos;shopping_cart_badge&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\Ravina\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54893}, goog:processID: 13172, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54893/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83cf29d049fa2772e45e31cb634df7fc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at PageObject.ProductAddToCart.getCartCount(ProductAddToCart.java:47)
-	at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:25)
+<h2>RegressionTests</h2><h3 id="m0">testCases.TC00_ProductAddToCart#ProductAddToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart count mismatch! expected [5] but found [2]
+	at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">testCases.TC001_LoginTest#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testCases.TC002_AddToCartTest#verifyAddToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

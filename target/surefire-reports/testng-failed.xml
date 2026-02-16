@@ -10,6 +10,7 @@
       <class name="testCases.TC00_ProductAddToCart">
         <methods>
           <include name="ProductAddToCart"/>
+          <include name="closeup"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC00_ProductAddToCart -->
