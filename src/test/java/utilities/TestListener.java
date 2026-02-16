@@ -1,5 +1,6 @@
 package utilities;
 
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -10,39 +11,46 @@ import testBase.BaseClass;
 
 public class TestListener implements ITestListener {
 
-    ExtentReports extent = ExtentManager.getReport();
-    ExtentTest test;
+    private static ExtentReports extent = ExtentManager.getReport();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     @Override
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getName());
+        ExtentTest extentTest =
+                extent.createTest(result.getMethod().getMethodName());
+        test.set(extentTest);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.pass("Test Passed");
+        test.get().pass("Test Passed");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
 
-        test.fail(result.getThrowable());
+        test.get().fail(result.getThrowable());
 
-        Object currentClass = result.getInstance();
-        BaseClass base = (BaseClass) currentClass;
+        Object testClass = result.getInstance();
 
-        String path = base.captureScreenshot(result.getName());
+        if (testClass instanceof BaseClass) {
+            BaseClass base = (BaseClass) testClass;
+            String path = base.captureScreenshot(
+                    result.getMethod().getMethodName()
+            );
 
-        try {
-            test.addScreenCaptureFromPath(path);
-        } catch (Exception e) {
-            e.printStackTrace();
+            try {
+                test.get().addScreenCaptureFromPath(path);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
     @Override
-    public void onFinish(org.testng.ITestContext context) {
+    public void onFinish(ITestContext context) {
         extent.flush();
     }
 }
+
 

@@ -9,36 +9,37 @@ import testBase.BaseClass;
 
 public class TC00_ProductAddToCart extends BaseClass {
 
-	@Test(groups = {"smoke", "regression"})
-	public void ProductAddToCart() {
+    @Test(groups = { "smoke", "regression" })
+    public void ProductAddToCart() {
 
-	    LoginPage lp = new LoginPage(driver);
-	    lp.enterUserName(p.getProperty("username"));
-	    lp.enterPassword(p.getProperty("password"));
-	    lp.clickButton();
+        // ---------- LOGIN ----------
+        LoginPage lp = new LoginPage(driver);
+        lp.enterUserName(p.getProperty("username"));
+        lp.enterPassword(p.getProperty("password"));
+        lp.clickButton();
 
-	    ProductAddToCart pa = new ProductAddToCart(driver);
+        ProductAddToCart pa = new ProductAddToCart(driver);
 
-	    int expectedCount = 0;
+        // ---------- ADD BACKPACK ----------
+        int countBefore = Integer.parseInt(pa.getCartCount());
+        pa.clickAddBackpack();
+        String countAfterBackpack =
+                pa.waitForCartCountIncrease(countBefore);
 
-	    pa.clickAddBackpack();
-	    expectedCount++;
+        // ---------- ADD BIKE LIGHT ----------
+        countBefore = Integer.parseInt(countAfterBackpack);
+        pa.clickBikeLight();
+        String finalCount =
+                pa.waitForCartCountIncrease(countBefore);
 
-	    pa.clicklight();
-	    expectedCount++;
+        System.out.println("Final Cart Count: " + finalCount);
 
-	    String actualCount = pa.getCartCount();
-	    System.out.println("Cart Count: " + actualCount);
+        Assert.assertEquals(finalCount, "2", "Cart count mismatch!");
 
-	    Assert.assertEquals(
-	        actualCount,
-	        String.valueOf(expectedCount),
-	        "Cart count mismatch!"
-	    );
-
-	    pa.clickcartIcon();
-	    pa.ContionShopping();
-	}
-
+        // ---------- CART FLOW ----------
+        pa.clickCartIcon();
+        pa.clickContinueShopping();
+    }
 }
+
 

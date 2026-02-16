@@ -1,26 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-16T17:09:44 IST" name="Shopping Suite" finished-at="2026-02-16T17:09:44 IST" duration-ms="178">
+  <suite started-at="2026-02-16T17:58:53 IST" name="Shopping Suite" finished-at="2026-02-16T17:59:07 IST" duration-ms="13546">
     <groups>
       <group name="regression">
-        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
+        <method signature="TC002_AddToCartTest.verifyAddToCart()[pri:0, instance:testCases.TC002_AddToCartTest@55f3c410]" name="verifyAddToCart" class="testCases.TC002_AddToCartTest"/>
+        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@11acdc30]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
+        <method signature="TC001_LoginTest.verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@5cc69cfe]" name="verifyLogin" class="testCases.TC001_LoginTest"/>
+        <method signature="TC00_ProductAddToCart.ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@11acdc30]" name="ProductAddToCart" class="testCases.TC00_ProductAddToCart"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-16T17:09:44 IST" name="Smoke Tests" finished-at="2026-02-16T17:09:44 IST" duration-ms="178">
+    <test started-at="2026-02-16T17:58:53 IST" name="All Tests" finished-at="2026-02-16T17:59:07 IST" duration-ms="13546">
+      <class name="testCases.TC001_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_LoginTest@5cc69cfe]" started-at="2026-02-16T17:58:53 IST" name="setup" finished-at="2026-02-16T17:58:59 IST" duration-ms="5718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC001_LoginTest@5cc69cfe]" started-at="2026-02-16T17:58:59 IST" name="verifyLogin" finished-at="2026-02-16T17:58:59 IST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC001_LoginTest@5cc69cfe]" started-at="2026-02-16T17:58:59 IST" name="closeup" finished-at="2026-02-16T17:59:00 IST" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeup -->
+      </class> <!-- testCases.TC001_LoginTest -->
+      <class name="testCases.TC002_AddToCartTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_AddToCartTest@55f3c410]" started-at="2026-02-16T17:58:53 IST" name="setup" finished-at="2026-02-16T17:58:58 IST" duration-ms="4624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddToCart()[pri:0, instance:testCases.TC002_AddToCartTest@55f3c410]" started-at="2026-02-16T17:58:58 IST" name="verifyAddToCart" finished-at="2026-02-16T17:59:00 IST" duration-ms="2740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCart -->
+        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC002_AddToCartTest@55f3c410]" started-at="2026-02-16T17:59:00 IST" name="closeup" finished-at="2026-02-16T17:59:01 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeup -->
+      </class> <!-- testCases.TC002_AddToCartTest -->
       <class name="testCases.TC00_ProductAddToCart">
-        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@acdb094]" started-at="2026-02-16T17:09:44 IST" name="ProductAddToCart" finished-at="2026-02-16T17:09:44 IST" duration-ms="76" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC00_ProductAddToCart@11acdc30]" started-at="2026-02-16T17:58:53 IST" name="setup" finished-at="2026-02-16T17:58:59 IST" duration-ms="6422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProductAddToCart()[pri:0, instance:testCases.TC00_ProductAddToCart@11acdc30]" started-at="2026-02-16T17:58:59 IST" name="ProductAddToCart" finished-at="2026-02-16T17:59:06 IST" duration-ms="6395" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "this.p" is null]]>
+              <![CDATA[Expected condition failed: waiting for url to contain "cart". Current url: "https://www.saucedemo.com/inventory.html" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ravina\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64428}, goog:processID: 8744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64428/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e44980c92cd7b115ce3643cfb521721a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.p" is null
-at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:16)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "cart". Current url: "https://www.saucedemo.com/inventory.html" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ravina\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64428}, goog:processID: 8744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64428/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e44980c92cd7b115ce3643cfb521721a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at PageObject.ProductAddToCart.clickCartIcon(ProductAddToCart.java:55)
+at testCases.TC00_ProductAddToCart.ProductAddToCart(TC00_ProductAddToCart.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -31,29 +99,23 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductAddToCart -->
+        <test-method is-config="true" signature="closeup()[pri:0, instance:testCases.TC00_ProductAddToCart@11acdc30]" started-at="2026-02-16T17:59:06 IST" name="closeup" finished-at="2026-02-16T17:59:07 IST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeup -->
       </class> <!-- testCases.TC00_ProductAddToCart -->
-    </test> <!-- Smoke Tests -->
+    </test> <!-- All Tests -->
   </suite> <!-- Shopping Suite -->
 </testng-results>
